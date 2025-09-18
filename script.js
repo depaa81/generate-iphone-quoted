@@ -3,15 +3,14 @@ const textInput=document.getElementById('text');
 const senderSel=document.getElementById('sender');
 const sendBtn=document.getElementById('send');
 const randBtn=document.getElementById('random');
-const toggleBtn=document.getElementById('toggleMode');
 
 const samples=[
-  "Hari ini indah banget ☀️",
-  "Lagi apa nih?",
-  "Kamu sudah makan?",
-  "Nanti malam nonton yuk!",
-  "Semangat terus ya 💪",
-  "Aku kangen deh 😅"
+  "Hari ini cerah banget ☀️",
+  "Lagi apa kamu?",
+  "Sudah makan siang belum?",
+  "Besok jalan yuk!",
+  "Semangat ya 💪",
+  "Aku kangen ngobrol 😅"
 ];
 
 function now(){
@@ -44,12 +43,7 @@ randBtn.onclick=()=>{
   addMessage(t,who);
 };
 
-toggleBtn.onclick=()=>{
-  document.body.classList.toggle('dark');
-  document.body.classList.toggle('light');
-  toggleBtn.textContent=document.body.classList.contains('dark')?'☀️':'🌙';
-};
-
-// isi awal
-addMessage("Halo, ini chat demo pertama!","them");
-addMessage("Sekarang bisa pilih Light/Dark Mode 🌗","me");
+// pesan awal
+addMessage("Hai! Ini versi custom tampilannya 🎨","them");
+addMessage("Mantap, fungsinya tetap sama 👌","me");
+    
