@@ -27,3 +27,4 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
     link.click();
   });
 });
+      
