@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iPhone WhatsApp Chat Generator</title>
   <link rel="stylesheet" href="style.css">
+  <!-- iPhone emoji font (Twemoji fallback) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twemoji-awesome/1.0.6/twemoji-awesome.css" />
+  <style>
+    body, input, button {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Emoji",
+                   "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -13,7 +21,7 @@
     <button id="generateBtn">Generate</button>
     <p id="status"></p>
 
-    <!-- Preview area -->
+    <!-- Preview -->
     <div id="chatPreview">
       <!-- Status bar -->
       <div class="status-bar">
