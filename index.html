@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iPhone Chat Generator</title>
+  <title>iPhone WhatsApp Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>iPhone Chat Generator</h1>
-    <input type="text" id="messageInput" placeholder="Ketik pesan...">
+    <h1>iPhone WhatsApp Chat Generator</h1>
+    <input type="text" id="messageInput" placeholder="Ketik pesan di sini...">
     <button id="generateBtn">Generate</button>
-
     <p id="status"></p>
 
-    <div id="chatArea">
-      <div class="chat-bubble">
-        <span id="chatText">Teks kamu muncul di sini...</span>
-        <span class="time" id="chatTime"></span>
+    <!-- area chat yang akan dijadikan gambar -->
+    <div id="chatPreview">
+      <div class="status-bar">
+        <span class="left">INDOSAT LTE</span>
+        <span class="center" id="statusTime">22:00</span>
+        <span class="right">66%</span>
+      </div>
+      <div class="chat-screen">
+        <div class="chat-bubble">
+          <span id="chatText">Contoh pesan...</span>
+          <span class="time" id="chatTime">22:00</span>
+        </div>
       </div>
     </div>
 
