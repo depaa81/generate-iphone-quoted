@@ -35,18 +35,19 @@ button:hover {
   opacity: 0.9;
 }
 
-/* area preview */
+/* --- Preview --- */
 #chatPreview {
   margin-top: 20px;
-  width: 300px;
-  background: #000;
+  width: 320px;
   border-radius: 20px;
   overflow: hidden;
   display: inline-block;
   text-align: left;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  background: #000;
 }
 
+/* Status bar */
 .status-bar {
   display: flex;
   justify-content: space-between;
@@ -56,14 +57,28 @@ button:hover {
   background: #111;
 }
 
+/* Chat area */
 .chat-screen {
   padding: 20px;
-  min-height: 150px;
-  background: url('https://i.ibb.co/pj1Q6Yk/wa-bg-dark.jpg') center/cover;
+  min-height: 220px;
+  background: #0d1117;
+  position: relative;
 }
 
+/* Reaction bar */
+.reaction-bar {
+  display: inline-block;
+  background: #2c2c2e;
+  padding: 6px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: white;
+}
+
+/* Chat bubble */
 .chat-bubble {
-  max-width: 220px;
+  max-width: 240px;
   background: #3a3a3c;
   color: #fff;
   padding: 10px 14px;
@@ -78,4 +93,33 @@ button:hover {
   color: #bbb;
   margin-top: 4px;
   text-align: right;
-  }
+}
+
+/* Popup menu */
+.popup-menu {
+  margin-top: 14px;
+  background: rgba(40,40,40,0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+}
+
+.menu-item {
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.menu-item span {
+  margin-right: 8px;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item.delete {
+  color: #ff3b30;
+}
