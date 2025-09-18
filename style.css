@@ -1,5 +1,4 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background: #0d1117;
   color: white;
   text-align: center;
@@ -60,20 +59,23 @@ button:hover {
 /* Chat area */
 .chat-screen {
   padding: 20px;
-  min-height: 220px;
-  background: #0d1117;
+  min-height: 260px;
+  background: url('https://i.ibb.co/7gK2H3b/wa-bg-ios.jpg') center/cover no-repeat;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   position: relative;
 }
 
 /* Reaction bar */
 .reaction-bar {
   display: inline-block;
-  background: #2c2c2e;
+  background: rgba(44,44,46,0.9);
   padding: 6px 10px;
   border-radius: 20px;
   margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
 /* Chat bubble */
@@ -103,6 +105,7 @@ button:hover {
   overflow: hidden;
   color: #fff;
   font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .menu-item {
@@ -122,4 +125,4 @@ button:hover {
 
 .menu-item.delete {
   color: #ff3b30;
-}
+  }
