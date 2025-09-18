@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>iPhone Chat Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <div class="phone">
+    <div class="header">
+      iPhone Chat Generator
+      <button id="toggleMode" class="toggle-btn">🌙</button>
+    </div>
+    <div class="screen">
+      <div class="messages" id="messages"></div>
+      <div class="controls">
+        <select id="sender">
+          <option value="me">Saya</option>
+          <option value="them">Teman</option>
+        </select>
+        <input id="text" type="text" placeholder="Tulis pesan..." />
+        <button id="send" class="btn-send">Kirim</button>
+        <button id="random" class="btn-random">🎲</button>
+      </div>
+    </div>
+    <div class="footer">Generate chat ala iPhone dengan Light & Dark Mode ✨</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
