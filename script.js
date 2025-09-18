@@ -20,11 +20,11 @@ document.getElementById("generateBtn").addEventListener("click", () => {
 
 // download gambar
 document.getElementById("downloadBtn").addEventListener("click", () => {
-  html2canvas(document.getElementById("chatPreview")).then(canvas => {
+  html2canvas(document.getElementById("chatPreview"), {backgroundColor: null}).then(canvas => {
     const link = document.createElement("a");
     link.download = "chat-iphone.png";
     link.href = canvas.toDataURL("image/png");
     link.click();
   });
 });
-      
+                                                                                    
