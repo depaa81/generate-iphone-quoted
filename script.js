@@ -12,6 +12,7 @@ document.getElementById("generateBtn").addEventListener("click", () => {
   const jam = now.getHours().toString().padStart(2, '0');
   const menit = now.getMinutes().toString().padStart(2, '0');
   document.getElementById("chatTime").innerText = `${jam}:${menit}`;
+  document.getElementById("statusTime").innerText = `${jam}:${menit}`;
 
   document.getElementById("status").innerText = "Generate Selesai!";
   document.getElementById("downloadBtn").style.display = "inline-block";
@@ -19,7 +20,7 @@ document.getElementById("generateBtn").addEventListener("click", () => {
 
 // download gambar
 document.getElementById("downloadBtn").addEventListener("click", () => {
-  html2canvas(document.getElementById("chatArea")).then(canvas => {
+  html2canvas(document.getElementById("chatPreview")).then(canvas => {
     const link = document.createElement("a");
     link.download = "chat-iphone.png";
     link.href = canvas.toDataURL("image/png");
