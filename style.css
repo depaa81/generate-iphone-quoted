@@ -60,39 +60,41 @@ button:hover {
 .chat-screen {
   padding: 20px;
   min-height: 260px;
-  background: url('https://i.ibb.co/7gK2H3b/wa-bg-ios.jpg') center/cover no-repeat;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: url('https://i.ibb.co/p0n5bWk/wa-ios-bg.jpg') center/cover no-repeat;
   position: relative;
 }
 
 /* Reaction bar */
 .reaction-bar {
   display: inline-block;
-  background: rgba(44,44,46,0.9);
+  background: rgba(44,44,46,0.75);  /* transparan */
   padding: 6px 10px;
   border-radius: 20px;
   margin-bottom: 8px;
   font-size: 20px;
   color: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  backdrop-filter: blur(20px);        /* efek blur */
+  -webkit-backdrop-filter: blur(20px);
 }
 
 /* Chat bubble */
 .chat-bubble {
   max-width: 240px;
-  background: #3a3a3c;
+  background: rgba(58,58,60,0.7);   /* transparan */
   color: #fff;
   padding: 10px 14px;
   border-radius: 16px;
   font-size: 15px;
   position: relative;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .chat-bubble .time {
   display: block;
   font-size: 11px;
-  color: #bbb;
+  color: #ccc;
   margin-top: 4px;
   text-align: right;
 }
@@ -100,13 +102,16 @@ button:hover {
 /* Popup menu */
 .popup-menu {
   margin-top: 14px;
-  background: rgba(40,40,40,0.95);
+  background: rgba(28,28,30,0.8);
   border-radius: 12px;
   overflow: hidden;
   color: #fff;
   font-size: 14px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
 }
+
 
 .menu-item {
   padding: 10px 12px;
