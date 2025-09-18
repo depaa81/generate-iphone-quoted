@@ -1,28 +1,30 @@
-<!doctype html>
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Custom iPhone Chat Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Chat Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="phone">
-    <div class="header">Custom iPhone Chat Generator</div>
-    <div class="screen">
-      <div class="messages" id="messages"></div>
-      <div class="controls">
-        <select id="sender">
-          <option value="me">Saya</option>
-          <option value="them">Teman</option>
-        </select>
-        <input id="text" type="text" placeholder="Tulis pesan..." />
-        <button id="send" class="btn-send">✉️ Kirim</button>
-        <button id="random" class="btn-random">🎲</button>
+  <div class="container">
+    <h1>iPhone Chat Generator</h1>
+    <input type="text" id="messageInput" placeholder="Ketik pesan...">
+    <button id="generateBtn">Generate</button>
+
+    <p id="status"></p>
+
+    <div id="chatArea">
+      <div class="chat-bubble">
+        <span id="chatText">Teks kamu muncul di sini...</span>
+        <span class="time" id="chatTime"></span>
       </div>
     </div>
-    <div class="footer">Fungsi sama, tampilan beda 🎨</div>
+
+    <button id="downloadBtn" style="display:none;">Download Gambar</button>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
