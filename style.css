@@ -35,30 +35,47 @@ button:hover {
   opacity: 0.9;
 }
 
-#chatArea {
+/* area preview */
+#chatPreview {
   margin-top: 20px;
-  padding: 20px;
-  display: inline-block;
+  width: 300px;
   background: #000;
   border-radius: 20px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: #fff;
+  background: #111;
+}
+
+.chat-screen {
+  padding: 20px;
+  min-height: 150px;
+  background: url('https://i.ibb.co/pj1Q6Yk/wa-bg-dark.jpg') center/cover;
 }
 
 .chat-bubble {
-  max-width: 260px;
+  max-width: 220px;
   background: #3a3a3c;
   color: #fff;
-  padding: 12px 16px;
-  border-radius: 20px;
-  text-align: left;
-  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 15px;
   position: relative;
-  font-size: 16px;
 }
 
 .chat-bubble .time {
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   color: #bbb;
-  margin-top: 6px;
+  margin-top: 4px;
   text-align: right;
-}
+  }
