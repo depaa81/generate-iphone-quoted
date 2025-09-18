@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iPhone WhatsApp Generator</title>
+  <title>iPhone WhatsApp Chat Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,17 +13,37 @@
     <button id="generateBtn">Generate</button>
     <p id="status"></p>
 
-    <!-- area chat yang akan dijadikan gambar -->
+    <!-- Preview area -->
     <div id="chatPreview">
+      <!-- Status bar -->
       <div class="status-bar">
         <span class="left">INDOSAT LTE</span>
         <span class="center" id="statusTime">22:00</span>
         <span class="right">66%</span>
       </div>
+
+      <!-- Chat screen -->
       <div class="chat-screen">
+        <!-- Reaction bar -->
+        <div class="reaction-bar">
+          👍 ❤️ 😂 😮 😢 🙏
+        </div>
+
+        <!-- Bubble -->
         <div class="chat-bubble">
           <span id="chatText">Contoh pesan...</span>
           <span class="time" id="chatTime">22:00</span>
+        </div>
+
+        <!-- Popup menu -->
+        <div class="popup-menu">
+          <div class="menu-item"><span>⭐</span> Beri Bintang</div>
+          <div class="menu-item"><span>↩️</span> Balas</div>
+          <div class="menu-item"><span>📤</span> Teruskan</div>
+          <div class="menu-item"><span>📋</span> Salin</div>
+          <div class="menu-item"><span>💬</span> Ucapkan</div>
+          <div class="menu-item"><span>⚠️</span> Laporkan</div>
+          <div class="menu-item delete"><span>🗑️</span> Hapus</div>
         </div>
       </div>
     </div>
